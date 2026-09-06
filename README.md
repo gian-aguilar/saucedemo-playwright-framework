@@ -4,6 +4,25 @@
 
 End-to-end test automation for [SauceDemo](https://www.saucedemo.com/) using Playwright Test and JavaScript.
 
+## Project Summary
+
+This project is a maintainable end-to-end automation framework for the SauceDemo web application. It uses Playwright Test with JavaScript to validate critical user journeys, including login, product sorting, shopping cart operations, checkout calculations, order completion, and logout.
+
+The framework follows the Page Object Model pattern. Reusable page classes separate browser interactions from test scenarios, while shared test data keeps users, products, and checkout information organized. The tests run in Chromium using a headless configuration suitable for local execution and continuous integration.
+
+The project also includes GitHub Actions integration. Every push or pull request targeting `main` or `master` runs the Playwright test suite on Ubuntu, installs the required browser dependencies, and uploads the generated HTML report as an artifact. A workflow status badge in this README provides a live indication of whether the latest automation run passed or failed.
+
+### What Was Implemented
+
+- Built login, inventory, cart, and checkout page objects.
+- Added positive and negative login test scenarios.
+- Added inventory, cart, checkout, pricing, order completion, and logout coverage.
+- Centralized test data and supported credential overrides through environment variables.
+- Configured headless Chromium execution with screenshots and failure traces.
+- Added HTML reporting and GitHub Actions artifact publishing.
+- Added a GitHub Actions workflow for automated test execution on pushes and pull requests.
+- Added documentation for local setup, test execution, GitHub publishing, and CI reports.
+
 ## Prerequisites
 
 - Node.js 20 or newer
