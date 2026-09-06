@@ -1,5 +1,7 @@
 # SauceDemo Playwright Automation
 
+[![Playwright Tests](https://github.com/gian-aguilar/saucedemo-playwright-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/gian-aguilar/saucedemo-playwright-framework/actions/workflows/playwright.yml)
+
 End-to-end test automation for [SauceDemo](https://www.saucedemo.com/) using Playwright Test and JavaScript.
 
 ## Prerequisites
@@ -64,6 +66,10 @@ npx playwright show-trace test-results/<trace-file>.zip
 ```
 
 Generated reports and test results are excluded from Git.
+
+### GitHub Actions Report
+
+View the latest workflow runs on the [Playwright Tests Actions page](https://github.com/gian-aguilar/saucedemo-playwright-framework/actions/workflows/playwright.yml). Open a completed run, then download the `playwright-report` artifact from the **Artifacts** section to inspect the HTML report.
 
 ## GitHub Actions
 
